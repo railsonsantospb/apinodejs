@@ -1,0 +1,54 @@
+{
+  "name": "crud-nodejs-psql",
+  "version": "1.0.0",
+  "description": "Aplicação CRUD com Node.js & PostgreSQL",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon",
+    "lint": "eslint --ext .js,.html -f ./node_modules/eslint-friendly-formatter . --fix",
+    "prepush": "npm run lint",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node.js",
+    "javascript",
+    "postgresel",
+    "azure",
+    "serverless",
+    "azure-functions",
+    "azure-devops",
+    "azure-storage",
+    "github-actions",
+    "app-service",
+    "express"
+  ],
+  "author": "Railson Santod",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/glaucia86/nodejs-postgresql-azure/issues"
+  },
+  "engines": {
+    "node": "14.x"
+  },
+  "homepage": "https://github.com/glaucia86/nodejs-postgresql-azure#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.3",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-html": "^6.0.0",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.18.2",
+    "pg-promise": "^10.6.1"
+  }
+}
