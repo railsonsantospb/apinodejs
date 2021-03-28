@@ -16,11 +16,12 @@ const router = express.Router();
 const accessTokenSecret = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9';
 
 const authenticateJWT = (req, res, next) => {
-    const authHeader = req.headers.authorization;
+    const authHeader = req.headers.authoarization;
     
     if (authHeader) {
     	
         const token = authHeader.split(' ')[1];
+
 
         if(token === accessTokenSecret){
         	next();
@@ -33,6 +34,7 @@ const authenticateJWT = (req, res, next) => {
 };
 
 router.get('/api',authenticateJWT, (req, res) => {
+    console.log(authHeader);
   res.status(200).send({
     success: 'true',
     message: 'Seja bem-vindo(a) a API Node.js + PostgreSQL + Azure!',
